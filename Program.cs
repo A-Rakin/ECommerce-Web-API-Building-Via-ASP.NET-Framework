@@ -27,22 +27,6 @@ app.MapGet("/products", () =>
 });
 
 
-
-app.MapPost("/hello", () =>
-{
-    return Results.Created();  //  201
-});
-
-app.MapPut("/hello", () =>
-{
-    return Results.NoContent();  //  204
-});
-
-app.MapDelete("/hello", () =>
-{
-    return Results.NoContent();  //  204
-});
-
 app.Run();
 
 public record Product(String Name, decimal Price, int id);
