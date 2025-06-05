@@ -1,0 +1,102 @@
+D:\Codes\Web\bin\Debug\net9.0\appsettings.Development.json
+D:\Codes\Web\bin\Debug\net9.0\appsettings.json
+D:\Codes\Web\bin\Debug\net9.0\Web.staticwebassets.endpoints.json
+D:\Codes\Web\bin\Debug\net9.0\Web.exe
+D:\Codes\Web\bin\Debug\net9.0\Web.deps.json
+D:\Codes\Web\bin\Debug\net9.0\Web.runtimeconfig.json
+D:\Codes\Web\bin\Debug\net9.0\Web.dll
+D:\Codes\Web\bin\Debug\net9.0\Web.pdb
+D:\Codes\Web\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Codes\Web\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Codes\Web\obj\Debug\net9.0\Web.csproj.AssemblyReference.cache
+D:\Codes\Web\obj\Debug\net9.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\Web\obj\Debug\net9.0\Web.AssemblyInfoInputs.cache
+D:\Codes\Web\obj\Debug\net9.0\Web.AssemblyInfo.cs
+D:\Codes\Web\obj\Debug\net9.0\Web.csproj.CoreCompileInputs.cache
+D:\Codes\Web\obj\Debug\net9.0\Web.MvcApplicationPartsAssemblyInfo.cs
+D:\Codes\Web\obj\Debug\net9.0\Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Codes\Web\obj\Debug\net9.0\scopedcss\bundle\Web.styles.css
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets.build.json
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets.development.json
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets\msbuild.build.Web.props
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Web.props
+D:\Codes\Web\obj\Debug\net9.0\staticwebassets.pack.json
+D:\Codes\Web\obj\Debug\net9.0\Web.csproj.Up2Date
+D:\Codes\Web\obj\Debug\net9.0\Web.dll
+D:\Codes\Web\obj\Debug\net9.0\refint\Web.dll
+D:\Codes\Web\obj\Debug\net9.0\Web.pdb
+D:\Codes\Web\obj\Debug\net9.0\Web.genruntimeconfig.cache
+D:\Codes\Web\obj\Debug\net9.0\ref\Web.dll
+D:\Web\bin\Debug\net9.0\appsettings.Development.json
+D:\Web\bin\Debug\net9.0\appsettings.json
+D:\Web\bin\Debug\net9.0\Web.staticwebassets.endpoints.json
+D:\Web\bin\Debug\net9.0\Web.exe
+D:\Web\bin\Debug\net9.0\Web.deps.json
+D:\Web\bin\Debug\net9.0\Web.runtimeconfig.json
+D:\Web\bin\Debug\net9.0\Web.dll
+D:\Web\bin\Debug\net9.0\Web.pdb
+D:\Web\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Web\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Web\obj\Debug\net9.0\Web.csproj.AssemblyReference.cache
+D:\Web\obj\Debug\net9.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web\obj\Debug\net9.0\Web.AssemblyInfoInputs.cache
+D:\Web\obj\Debug\net9.0\Web.AssemblyInfo.cs
+D:\Web\obj\Debug\net9.0\Web.csproj.CoreCompileInputs.cache
+D:\Web\obj\Debug\net9.0\Web.MvcApplicationPartsAssemblyInfo.cs
+D:\Web\obj\Debug\net9.0\Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Web\obj\Debug\net9.0\scopedcss\bundle\Web.styles.css
+D:\Web\obj\Debug\net9.0\staticwebassets.build.json
+D:\Web\obj\Debug\net9.0\staticwebassets.development.json
+D:\Web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Web\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Web\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Web\obj\Debug\net9.0\staticwebassets\msbuild.build.Web.props
+D:\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+D:\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Web.props
+D:\Web\obj\Debug\net9.0\staticwebassets.pack.json
+D:\Web\obj\Debug\net9.0\Web.csproj.Up2Date
+D:\Web\obj\Debug\net9.0\Web.dll
+D:\Web\obj\Debug\net9.0\refint\Web.dll
+D:\Web\obj\Debug\net9.0\Web.pdb
+D:\Web\obj\Debug\net9.0\Web.genruntimeconfig.cache
+D:\Web\obj\Debug\net9.0\ref\Web.dll
+D:\E-Commerce Web API\bin\Debug\net9.0\appsettings.Development.json
+D:\E-Commerce Web API\bin\Debug\net9.0\appsettings.json
+D:\E-Commerce Web API\bin\Debug\net9.0\Web.staticwebassets.endpoints.json
+D:\E-Commerce Web API\bin\Debug\net9.0\Web.exe
+D:\E-Commerce Web API\bin\Debug\net9.0\Web.deps.json
+D:\E-Commerce Web API\bin\Debug\net9.0\Web.runtimeconfig.json
+D:\E-Commerce Web API\bin\Debug\net9.0\Web.dll
+D:\E-Commerce Web API\bin\Debug\net9.0\Web.pdb
+D:\E-Commerce Web API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\E-Commerce Web API\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.csproj.AssemblyReference.cache
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.AssemblyInfoInputs.cache
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.AssemblyInfo.cs
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.csproj.CoreCompileInputs.cache
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.MvcApplicationPartsAssemblyInfo.cs
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.MvcApplicationPartsAssemblyInfo.cache
+D:\E-Commerce Web API\obj\Debug\net9.0\scopedcss\bundle\Web.styles.css
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets.build.json
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets.development.json
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets\msbuild.build.Web.props
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Web.props
+D:\E-Commerce Web API\obj\Debug\net9.0\staticwebassets.pack.json
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.csproj.Up2Date
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.dll
+D:\E-Commerce Web API\obj\Debug\net9.0\refint\Web.dll
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.pdb
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.genruntimeconfig.cache
+D:\E-Commerce Web API\obj\Debug\net9.0\ref\Web.dll
+D:\E-Commerce Web API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\E-Commerce Web API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\E-Commerce Web API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
