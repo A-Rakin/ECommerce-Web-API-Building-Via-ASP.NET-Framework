@@ -100,3 +100,4 @@ D:\E-Commerce Web API\obj\Debug\net9.0\ref\Web.dll
 D:\E-Commerce Web API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\E-Commerce Web API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\E-Commerce Web API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\E-Commerce Web API\obj\Debug\net9.0\Web.sourcelink.json
