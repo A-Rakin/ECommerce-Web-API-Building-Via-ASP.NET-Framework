@@ -18,8 +18,9 @@ app.MapGet("/", () => "Yes, API is Perfectly Calling");
 
 
 //Read a Category   --> GET: /api/categories
-app.MapGet("/api/categories", () =>
+app.MapGet("/api/categories", (String searchValue) =>
 {
+Console.WriteLine($"{searchValue}"); //Query 
     return Results.Ok(categories);    // 200
 });
 
