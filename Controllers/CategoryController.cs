@@ -29,7 +29,7 @@ namespace asp_net_ecommerce_web_api.Controllers
                 CreatedAt = c.CreatedAt
             }).ToList();
 
-            return Ok();
+            return Ok(ApiResponse<List<CategoryReadDto>>.SuccessResponse(categoryList, 200, "Catgeories returned successfully"));
         }
 
         // POST: /api/categories => Create a category
@@ -54,7 +54,7 @@ namespace asp_net_ecommerce_web_api.Controllers
                 CreatedAt = newCategory.CreatedAt,
             };
 
-            return Created();
+            return Created($"/api/categories/{newCategory.CategoryId}", ApiResponse<CategoryReadDto>.SuccessResponse(categoryReadDto, 201, "Catgeory created successfully"));
         }
 
         // PUT: /api/categories/{categoryId} => Update a category
@@ -64,13 +64,13 @@ namespace asp_net_ecommerce_web_api.Controllers
             var foundCategory = categories.FirstOrDefault(category => category.CategoryId == categoryId);
             if (foundCategory == null)
             {
-                return NotFound();
+                return NotFound(ApiResponse<object>.ErrorResponse(new List<string> { "Category with this ID does not exist" }, 404, "Validation failed"));
             }
 
             foundCategory.Name = categoryData.Name;
             foundCategory.Description = categoryData.Description;
 
-            return Ok();
+            return Ok(ApiResponse<object>.SuccessResponse(null, 204, "Catgeory Updated successfully"));
         }
 
         // DELETE: /api/categories/{categoryId} => Delete a category by Id
@@ -80,10 +80,10 @@ namespace asp_net_ecommerce_web_api.Controllers
             var foundCategory = categories.FirstOrDefault(category => category.CategoryId == categoryId);
             if (foundCategory == null)
             {
-                return NotFound();
+                return NotFound(ApiResponse<object>.ErrorResponse(new List<string> { "Category with this ID does not exist" }, 404, "Validation failed"));
             }
             categories.Remove(foundCategory);
-            return Ok();
+            return Ok(ApiResponse<object>.SuccessResponse(null, 204, "Category deleted successfully"));
         }
     }
 }
