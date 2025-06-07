@@ -4,9 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-
+using asp_net_ecommerce_web_api.DTOs;
 using asp_net_ecommerce_web_api.Models;
-using System.ComponentModel.DataAnnotations;
 
 namespace asp_net_ecommerce_web_api.Controllers
 {
@@ -14,34 +13,30 @@ namespace asp_net_ecommerce_web_api.Controllers
     [Route("api/categories/")]
     public class CategoryController : ControllerBase
     {
+
+
         private static List<Category> categories = new List<Category>();
 
+        // GET: /api/categories => Read categories
         [HttpGet]
-        public IActionResult GetCategories([FromQuery] String searchValue)
+        public IActionResult GetCategories()
         {
-            if (searchValue != null)
+            var categoryList = categories.Select(c => new CategoryReadDto
             {
-                var searchCategories = categories.Where(c => !string.IsNullOrEmpty(c.Name) && c.Name.Contains(searchValue, StringComparison.OrdinalIgnoreCase)).
-                ToList();
-                return Ok(searchCategories);
-            }
+                CategoryId = c.CategoryId,
+                Name = c.Name,
+                Description = c.Description,
+                CreatedAt = c.CreatedAt
+            }).ToList();
+
             return Ok();
         }
 
-
+        // POST: /api/categories => Create a category
         [HttpPost]
-        public IActionResult CreateCategory([FromBody] Category categoryData)
+        public IActionResult CreateCategory([FromBody] CategoryCreateDto categoryData)
         {
-            if (string.IsNullOrEmpty(categoryData.Name))
-            {
-                return BadRequest("Category Name is Required and cannot be Empty");
-
-            }
-            if (categoryData.Name.Length < 2)
-            {
-                return BadRequest("Category Name size should be 2 characters Long");
-            }
-            var newCatagory = new Category
+            var newCategory = new Category
             {
                 CategoryId = Guid.NewGuid(),
                 Name = categoryData.Name,
@@ -49,40 +44,46 @@ namespace asp_net_ecommerce_web_api.Controllers
                 CreatedAt = DateTime.UtcNow,
             };
 
-            categories.Add(newCatagory);
-            return Created($"/api/categories/{newCatagory.CategoryId}", newCatagory);
+            categories.Add(newCategory);
+
+            var categoryReadDto = new CategoryReadDto
+            {
+                CategoryId = newCategory.CategoryId,
+                Name = newCategory.Name,
+                Description = newCategory.Description,
+                CreatedAt = newCategory.CreatedAt,
+            };
+
+            return Created();
         }
 
-        [HttpDelete("{categoryId:guid}")]
-        public IActionResult DeleteCategorybyId(Guid categoryId)
+        // PUT: /api/categories/{categoryId} => Update a category
+        [HttpPut("{categoryId:guid}")]
+        public IActionResult UpdateCategoryById(Guid categoryId, [FromBody] CategoryUpdateDto categoryData)
         {
-            var foundCategory = categories.FirstOrDefault(Category => Category.CategoryId == categoryId);
-
+            var foundCategory = categories.FirstOrDefault(category => category.CategoryId == categoryId);
             if (foundCategory == null)
             {
-                return NotFound("Category with this id does not exist");
+                return NotFound();
+            }
+
+            foundCategory.Name = categoryData.Name;
+            foundCategory.Description = categoryData.Description;
+
+            return Ok();
+        }
+
+        // DELETE: /api/categories/{categoryId} => Delete a category by Id
+        [HttpDelete("{categoryId:guid}")]
+        public IActionResult DeleteCategoryById(Guid categoryId)
+        {
+            var foundCategory = categories.FirstOrDefault(category => category.CategoryId == categoryId);
+            if (foundCategory == null)
+            {
+                return NotFound();
             }
             categories.Remove(foundCategory);
-            return NoContent();
-        }
-        [HttpPut("{categoryId:guid}")]
-        public IActionResult UpdateCategorybyId(Guid categoryId, [FromBody] Category categoryData)
-        {
-            if (categoryData == null)
-            {
-                return BadRequest("Category Data is Missing");
-            }
-            var foundCategory = categories.FirstOrDefault(Category => Category.CategoryId == categoryId);
-            if (foundCategory == null)
-            {
-                return NotFound("Category with this id does not exist");
-            }
-            if (!string.IsNullOrWhiteSpace(categoryData.Description))
-            {
-                foundCategory.Description = categoryData.Description;
-            }
-            return NoContent();
+            return Ok();
         }
     }
-
 }
